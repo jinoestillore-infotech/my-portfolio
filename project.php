@@ -17,6 +17,32 @@ include 'includes/navbar.php';
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100 border">
+                    <img src="assets/images/project-six.jpg" 
+                         class="card-img-top" 
+                         alt="Simple Inventory System"
+                         loading="lazy">
+                    <div class="card-body text-start">
+                        <h5 class="fw-bold">Simple Inventory System</h5>
+                        <p class="text-muted small">
+                            A simple business inventory management system designed for stores and small businesses to manage products, monitor stock levels, track sales, and organize inventory records efficiently.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-dark">PHP</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                            <span class="badge bg-success">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-center">
+                        <a href="https://demo-live-inventory-system.infinityfree.me/" 
+                           target="_blank" 
+                           class="btn btn-sm btn-outline-primary w-100">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 border">
                     <img src="assets/images/project-four.jpg" 
                          class="card-img-top" 
                          alt="Simple Library Borrowing System">
