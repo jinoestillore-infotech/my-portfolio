@@ -138,6 +138,29 @@ include 'includes/navbar.php';
                 </div>
             </div>
             
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm h-100 border">
+                    <img src="assets/images/project-three.jpg" 
+                         class="card-img-top" 
+                         alt="DPWH IT Inventory Assets">
+                    <div class="card-body text-start">
+                        <h5 class="fw-bold">TrackEd</h5>
+                        <p class="text-muted small">
+                            A student productivity and learning tracker system designed to help students organize schedules, manage study plans, track topics, monitor learning progress, and build consistent study habits through streaks and mastery-based progress tracking.
+                        </p>
+                        <div class="mb-2">
+                            <span class="badge bg-dark">PHP</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                            <span class="badge bg-success">MySQL</span>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-white border-0 d-flex justify-content-center">
+                        <a href="https://demo-tracked.is-great.org/" target="_blank" class="btn btn-sm btn-outline-primary w-100">
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
