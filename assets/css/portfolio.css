@@ -1,0 +1,172 @@
+/* Premium Modern Styles for Projects Page */
+:root {
+    --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    --dark-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    --soft-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
+    --hover-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.08);
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    
+    /* Technology Brand Colors */
+    --color-php-bg: rgba(119, 123, 179, 0.08);
+    --color-php-text: #777bb3;
+    --color-bootstrap-bg: rgba(121, 82, 179, 0.08);
+    --color-bootstrap-text: #7952b3;
+    --color-mysql-bg: rgba(0, 117, 143, 0.08);
+    --color-mysql-text: #00758f;
+    --color-laravel-bg: rgba(255, 45, 32, 0.08);
+    --color-laravel-text: #ff2d20;
+    
+    /* Dedicated CSS & JavaScript Brand Colors */
+    --color-css-bg: rgba(21, 114, 182, 0.08);
+    --color-css-text: #1572b6;
+    --color-js-bg: rgba(234, 179, 8, 0.08);
+    --color-js-text: #ca8a04;
+}
+
+/* Subtitle Badges */
+.section-badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #3b82f6;
+    background: rgba(59, 130, 246, 0.05);
+    border: 1px solid rgba(59, 130, 246, 0.1);
+    padding: 6px 16px;
+    border-radius: 30px;
+    margin-bottom: 16px;
+}
+
+/* Hero Banner Redesign */
+.hero-projects-bg {
+    background: var(--dark-gradient) !important;
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0 80px 0 !important;
+}
+
+.hero-projects-bg::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(0,0,0,0) 70%);
+    top: -50px;
+    right: -50px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Premium Project Card Grid */
+.project-card {
+    background: #ffffff;
+    border: 1px solid rgba(15, 23, 42, 0.06);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    box-shadow: var(--soft-shadow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--hover-shadow);
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+/* Image Wrapper scale effect */
+.project-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    background: #f1f5f9;
+    aspect-ratio: 16/10;
+    border-bottom: 1px solid rgba(15, 23, 42, 0.04);
+}
+
+.project-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.project-card:hover .project-img-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Description and Content */
+.project-card-body {
+    padding: 28px 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.project-desc {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+/* Tech Pill Badges */
+.tech-pill {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    padding: 5px 12px;
+    border-radius: 8px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.tech-php { background: var(--color-php-bg); color: var(--color-php-text); }
+.tech-bootstrap { background: var(--color-bootstrap-bg); color: var(--color-bootstrap-text); }
+.tech-mysql { background: var(--color-mysql-bg); color: var(--color-mysql-text); }
+.tech-laravel { background: var(--color-laravel-bg); color: var(--color-laravel-text); }
+.tech-css { background: var(--color-css-bg); color: var(--color-css-text); }
+.tech-js { background: var(--color-js-bg); color: var(--color-js-text); }
+
+/* Action Footer Buttons */
+.project-card-footer {
+    padding: 0 24px 28px 24px;
+    background: transparent;
+    border-top: none;
+}
+
+.btn-project-action {
+    border: 1.5px solid #0f172a;
+    background: transparent;
+    color: #0f172a;
+    font-weight: 500;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    transition: var(--transition-smooth);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+}
+
+.btn-project-action:hover {
+    background: #0f172a;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
