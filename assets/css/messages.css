@@ -1,0 +1,191 @@
+    /* Premium Modern Styles for Client Messages Page */
+    :root {
+        --primary-gradient: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+        --dark-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        --soft-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
+        --hover-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.08);
+        --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    /* Subtitle Badges */
+    .section-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #3b82f6;
+        background: rgba(59, 130, 246, 0.05);
+        border: 1px solid rgba(59, 130, 246, 0.1);
+        padding: 6px 16px;
+        border-radius: 30px;
+        margin-bottom: 16px;
+    }
+
+    /* Hero Banner Redesign */
+    .hero-messages-bg {
+        background: var(--dark-gradient) !important;
+        position: relative;
+        overflow: hidden;
+        padding: 100px 0 80px 0 !important;
+    }
+
+    .hero-messages-bg::before {
+        content: "";
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(0,0,0,0) 70%);
+        top: -50px;
+        right: -50px;
+        z-index: 1;
+        pointer-events: none;
+    }
+
+    /* Premium Modern Card Container for Table */
+    .messages-card {
+        background: #ffffff;
+        border: 1px solid rgba(15, 23, 42, 0.06);
+        border-radius: 24px;
+        padding: 0;
+        overflow: hidden;
+        box-shadow: var(--soft-shadow);
+        transition: var(--transition-smooth);
+    }
+
+    .messages-card:hover {
+        box-shadow: var(--hover-shadow);
+    }
+
+    /* Custom Modern Table Elements */
+    .table-modern {
+        margin-bottom: 0;
+    }
+
+    .table-modern thead th {
+        background-color: #f8fafc;
+        color: #475569;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 20px 24px;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .table-modern tbody tr {
+        transition: var(--transition-smooth);
+    }
+
+    .table-modern tbody tr:hover {
+        background-color: #f8fafc;
+    }
+
+    .table-modern tbody td {
+        padding: 20px 24px;
+        vertical-align: middle;
+        color: #334155;
+        font-size: 0.95rem;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    /* Client Avatar Bubble */
+    .client-avatar-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .client-avatar {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background: rgba(59, 130, 246, 0.08);
+        color: #3b82f6;
+        font-weight: 600;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    .client-name {
+        font-weight: 600;
+        color: #0f172a;
+    }
+
+    .client-email {
+        color: #64748b;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 0.9rem;
+    }
+
+    .msg-preview {
+        color: #475569;
+        max-width: 320px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* Customized Action Button */
+    .btn-view-action {
+        border: 1.5px solid #0f172a;
+        background: transparent;
+        color: #0f172a;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 0.85rem;
+        transition: var(--transition-smooth);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        text-decoration: none;
+    }
+
+    .btn-view-action:hover {
+        background: #0f172a;
+        color: #ffffff;
+        transform: translateY(-1px);
+    }
+
+    /* Custom Modern Pagination Styles */
+    .pagination-modern .page-item .page-link {
+        border: 1px solid #e2e8f0;
+        color: #475569;
+        padding: 10px 18px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        margin: 0 3px;
+        border-radius: 8px;
+        transition: var(--transition-smooth);
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .pagination-modern .page-item:first-child .page-link,
+    .pagination-modern .page-item:last-child .page-link {
+        border-radius: 8px;
+    }
+
+    .pagination-modern .page-item.active .page-link {
+        background: var(--primary-gradient);
+        border-color: #3b82f6;
+        color: #ffffff;
+        box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+    }
+
+    .pagination-modern .page-item .page-link:hover {
+        background-color: #f1f5f9;
+        border-color: #cbd5e1;
+        color: #0f172a;
+    }
+
+    .pagination-modern .page-item.disabled .page-link {
+        background-color: #f8fafc;
+        border-color: #e2e8f0;
+        color: #94a3b8;
+    }
