@@ -16,7 +16,7 @@ if (!$message) {
     die("Message not found.");
 }
 ?>
-<link href="assets/css/message_view.css" rel="stylesheet">
+<link href="../assets/css/message_view.css" rel="stylesheet">
 
 <section class="hero-details-bg text-white text-center">
     <div class="container relative z-index-2">
@@ -100,7 +100,7 @@ if (!$message) {
 
                 <!-- Action Footer -->
                 <div class="d-flex flex-column flex-sm-row justify-content-between align-items-stretch align-items-sm-center gap-3">
-                    <a href="/portfolio/messages" class="btn-action-back justify-content-center">
+                    <a href="../messages" class="btn-action-back justify-content-center">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="19" y1="12" x2="5" y2="12"/>
                             <polyline points="12 19 5 12 12 5"/>
