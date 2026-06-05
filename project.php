@@ -140,7 +140,7 @@ include 'includes/navbar.php';
             
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100 border">
-                    <img src="assets/images/project-three.jpg" 
+                    <img src="assets/images/project-seven.jpg" 
                          class="card-img-top" 
                          alt="DPWH IT Inventory Assets">
                     <div class="card-body text-start">
@@ -161,6 +161,7 @@ include 'includes/navbar.php';
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </section>
