@@ -80,7 +80,7 @@ include 'includes/navbar.php';
                         </div>
                     </div>
                     <div class="project-card-footer">
-                        <a href="https://dpwh-assets-inventory.page.gd/DPWH-SITE/" 
+                        <a href="https://demo-live-library-system.is-great.net/" 
                            target="_blank" 
                            class="btn-project-action">
                             Live Demo
@@ -153,7 +153,7 @@ include 'includes/navbar.php';
                         </div>
                     </div>
                     <div class="project-card-footer">
-                        <a href="https://olympus-marketing.wuaze.com/" 
+                        <a href="https://demo-sea-olympus-marketing.nichesite.org/" 
                            target="_blank" 
                            class="btn-project-action">
                             Live Demo
